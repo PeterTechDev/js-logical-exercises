@@ -1,0 +1,56 @@
+.b-interface {
+  width: 375px;
+  border: 1px solid #000;
+  padding: 1em;
+  margin: 100px auto;
+  background: lightcoral;
+}
+
+.b-interface__title {
+  text-align: center;
+}
+
+.b-interface hr {
+  margin: 30px 0;
+}
+
+.b-interface__result {
+  margin: 50px;
+  margin-left: 5%;
+}
+
+.c-app__inputs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.c-app__inputs-container input {
+  padding: 0.5em;
+  outline: none;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  max-width: 260px;
+}
+
+.c-app__button {
+  background-color: green;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  padding: 0.5em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.c-app__button:hover {
+  cursor: pointer;
+  border: 1px solid #1100ff;
+}
+/*# sourceMappingURL=styles.css.map */
