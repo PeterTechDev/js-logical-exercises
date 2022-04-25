@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de metros para milímetros</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="b-interface">
+    <h1 class="b-interface__title">Desafio 1.4</h1>
+    <h2 class="b-interface__subtitle">Conversor de metros para milímetros</h2>
+    <p class="b-interface__text">Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem do aumento. Exiba o valor do aumento e do novo salário.</p>
+    <hr>
+    <section class="b-interface__app c-app">
+      <div class="c-app__inputs-container">
+        <label for="js-input1">Salário Atual
+          <input type="number" min="0"  id="js-input1" placeholder="Salário"> 
+        </label>
+        <label for="js-input1">Aumento em %
+          <input type="number" min="0" id="js-input2" placeholder="Aumento"> 
+        </label>
+
+        <button class="c-app__button" id="js-submit" onclick="submit()">Calcular</button>
+      </div>
+    </section>
+    <div class="b-interface__result-container">
+      <p class="b-interface__result">Novo salário com aumento: <span id="js-result"></span></p>
+    </div>
+<p>Design is my passion</p>
+  </div>
+  <script src="./script.js"></script> 
+</body>
+</html>
