@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule o aluguel do carro</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="b-interface">
+    <h1 class="b-interface__title">Desafio 1.10</h1>
+    <h2 class="b-interface__subtitle">Expectativa vida fumante </h2>
+    <p class="b-interface__text">Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um fumante perde 1 0 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante perderá. Exiba o
+      total de dias.</p>
+    <hr>
+    <section class="b-interface__app c-app">
+      <div class="c-app__inputs-container">
+        <label for="js-input1">Cigarros por dia
+          <input type="number" min="0"  id="js-input1" placeholder="Preencha as dias"> 
+        </label>
+        <label for="js-input1">Quantidade anos que fumou
+          <input type="number" min="0"  id="js-input2" placeholder="Preencha as dias"> 
+        </label>
+
+        <button class="c-app__button" id="js-submit" onclick="submit()">Calcular</button>
+      </div>
+    </section>
+    <div class="b-interface__result-container">
+      <p class="b-interface__result">Dias de vida perdidos <span id="js-result"></span></p>
+    </div>
+<p>Design is my passion</p>
+  </div>
+  <script src="./script.js"></script> 
+</body>
+</html>
