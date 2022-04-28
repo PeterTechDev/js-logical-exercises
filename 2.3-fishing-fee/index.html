@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 2.3</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="form">
+    <div class="title">Fiscal de Peixe</div>
+    <p>A quantidade máxima de peixe permitida é de 50kg. Todo excedente gerará uma multa de R$4.00 por kilo</p>
+    <div class="input-container">
+        <input id="field-1" class="input js-input1" type="text" placeholder=" " />
+        <div class="float-label"></div>
+        <label for="field-1" class="placeholder">Peso de peixe em kg</label>
+    </div>
+
+    <button class="submit js-submit" onclick="submit()">Verificar</button>
+    <div class="result-container">
+        <p class="result js-result">Resultado</p>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
