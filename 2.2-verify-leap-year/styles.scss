@@ -111,7 +111,7 @@ body {
   border-radius: 12px;
   border: 0;
   padding: 4px 20px 0;
-  width: 50%;
+  width: 75%;
   display: flex;
   justify-content: center;
   margin: 30px auto 0;
@@ -125,6 +125,5 @@ body {
 
   &.active {
     color: white;
-    text-decoration: underline;
   }
 }

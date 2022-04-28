@@ -35,7 +35,8 @@ body {
   background-color: #495867;
   border-radius: 12px;
   border: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #eee;
   font-size: 18px;
   height: 100%;
@@ -50,15 +51,20 @@ body {
   height: 30px;
   position: absolute;
   top: 0;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
   transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
   width: 80px;
   z-index: -1;
 }
 
 .input:focus ~ .float-label,
 .input:not(:placeholder-shown) ~ .float-label {
-  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
   z-index: 0;
 }
 
@@ -69,14 +75,19 @@ body {
   line-height: 14px;
   pointer-events: none;
   position: absolute;
-  transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition: color 200ms, -webkit-transform 200ms;
+  transition: color 200ms, -webkit-transform 200ms;
   transition: transform 200ms, color 200ms;
+  transition: transform 200ms, color 200ms, -webkit-transform 200ms;
   top: 15px;
 }
 
 .input:focus ~ .placeholder,
 .input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-35px) translateX(-5px) scale(0.75);
+  -webkit-transform: translateY(-35px) translateX(-5px) scale(0.75);
+          transform: translateY(-35px) translateX(-5px) scale(0.75);
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
@@ -91,7 +102,8 @@ body {
   background-color: #fe5f55;
   border-radius: 12px;
   border: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #eee;
   cursor: pointer;
   font-size: 18px;
@@ -102,29 +114,33 @@ body {
 }
 
 .submit:active {
-  background-color: green; 
+  background-color: green;
 }
 
-.result-container{
+.result-container {
   position: relative;
   background-color: #303245;
   border-radius: 12px;
   border: 0;
   padding: 4px 20px 0;
-  width: 50%;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 30px auto 0;
   cursor: copy;
-} 
+}
 
-.result{
+.result {
   font-size: 20px;
   color: black;
   text-transform: uppercase;
-
-  &.active {
-    color: white;
-    text-decoration: underline;
-  }
 }
+
+.result.active {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
