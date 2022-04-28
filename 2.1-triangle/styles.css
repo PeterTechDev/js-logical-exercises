@@ -1,0 +1,147 @@
+:root {
+  --font-family-primary: 'Comfortaa', sans-serif;
+  --color-black-coral: #495867;
+  --color-blue-yonder: #577399;
+  --color-beau-blue: #bdd5ea;
+  --color-ghots-white: #f7f7ff;
+  --color-orange-red: #fe5f55;
+}
+
+body {
+  background-color: #495867;
+  color: #f7f7ff;
+}
+
+.form {
+  background-color: #577399;
+  border-radius: 10px;
+  padding: 20px 30px;
+  max-width: 350px;
+  margin: 100px auto;
+}
+
+.title {
+  font-size: 42px;
+  text-align: center;
+}
+
+.input-container {
+  height: 40px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.input {
+  background-color: #495867;
+  border-radius: 12px;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  padding: 4px 20px 0;
+  width: 100%;
+  outline: none;
+}
+
+.float-label {
+  background-color: #495867;
+  border-radius: 10px 10px 0 0;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  width: 80px;
+  z-index: -1;
+}
+
+.input:focus ~ .float-label,
+.input:not(:placeholder-shown) ~ .float-label {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  z-index: 0;
+}
+
+.placeholder {
+  color: #bdd5ea;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition: color 200ms, -webkit-transform 200ms;
+  transition: color 200ms, -webkit-transform 200ms;
+  transition: transform 200ms, color 200ms;
+  transition: transform 200ms, color 200ms, -webkit-transform 200ms;
+  top: 15px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  -webkit-transform: translateY(-35px) translateX(-5px) scale(0.75);
+          transform: translateY(-35px) translateX(-5px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #808097;
+}
+
+.submit {
+  background-color: #fe5f55;
+  border-radius: 12px;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: green;
+}
+
+.result-container {
+  position: relative;
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  padding: 4px 20px 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto 0;
+  cursor: copy;
+}
+
+.result {
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.result.active {
+  color: white;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */
