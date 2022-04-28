@@ -10,9 +10,9 @@ function calcDaysGone(cigarettesPerDay, yearsSmoke) {
 
   yearsSmoke = yearsSmoke * 365;
 
-  let totalCigarettes = cigarettesPerDay * yearsSmoke ;
+  const totalCigarettes = cigarettesPerDay * yearsSmoke ;
 
-  let daysLost = parseInt((totalCigarettes * minutesLostPerCigarette) / minutesPerDay);
+  const daysLost = parseInt((totalCigarettes * minutesLostPerCigarette) / minutesPerDay);
   
   return daysLost;
 }
